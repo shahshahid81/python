@@ -27,7 +27,7 @@ a = [1, 2]
 b = [1, 2, 3]
 print("3. Comparison:")
 print(a < b)            # True
-print([1, 2] == [1, 2]) # True
+print([1, 2] == [1, 2])  # True
 print()
 
 # 4. Boolean logic: and, or, not
@@ -94,7 +94,7 @@ a = (1, 2)
 b = (1, 2, 3)
 print("3. Comparison:")
 print(a < b)            # True
-print((1, 2) == (1, 2)) # True
+print((1, 2) == (1, 2))  # True
 print()
 
 # 4. Boolean logic: and, or, not
@@ -156,7 +156,7 @@ a = range(3)
 b = range(5)
 print("3. Comparison:")
 print(list(a) < list(b))   # True (compare by converted lists)
-print(range(2) == range(2)) # True
+print(range(2) == range(2))  # True
 print()
 
 # 4. Boolean logic: and, or, not
@@ -208,4 +208,3 @@ print()
 print("Extra:")
 print(list(r))            # [1, 2, 3, 4, 5]
 print(tuple(r))           # (1, 2, 3, 4, 5)
-

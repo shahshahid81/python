@@ -16,4 +16,3 @@ print(width * height)
 # print(n) # Error n is not defined
 
 print(4 * 3.75 - 1)
-

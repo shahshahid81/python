@@ -76,7 +76,7 @@ list.extend(m)
 print(list)
 
 # Insert at specific index
-list.insert(0,'first')
+list.insert(0, 'first')
 print(list)
 
 # remove first occurence of the value
@@ -103,7 +103,7 @@ print(idx)
 # count occurence
 print(list.count(1))
 
-list = [12,11,4,31,8]
+list = [12, 11, 4, 31, 8]
 # sorts and modifies the original list, note that elements must be comparable
 list.sort()
 print(list)

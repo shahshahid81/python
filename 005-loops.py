@@ -59,7 +59,7 @@ for n in range(2, 10):
         if n % x == 0:
             print(f"{n} equals {x} * {n//x}")
             break
-        
+
 for num in range(2, 10):
     if num % 2 == 0:
         print(f"Found an even number {num}")
@@ -77,12 +77,15 @@ for n in range(2, 10):
         print(n, 'is a prime number')
 
 # The pass statement does nothing. It can be used when a statement is required syntactically but the program requires no action.
+
+
 class MyEmptyClass:
     pass
+
 
 def initlog(*args):
     pass   # Remember to implement this!
 
+
 while True:
     pass  # Busy-wait for keyboard interrupt (Ctrl+C)
-

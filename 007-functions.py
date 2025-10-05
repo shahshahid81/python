@@ -45,9 +45,9 @@ def ask_ok(prompt, retries=4, reminder="Please try again!"):
         print(reminder)
 
 
-# ask_ok("Do you really want to quit?")
-# ask_ok("OK to overwrite the file?", 2)
-# ask_ok("OK to overwrite the file?", 2, "Come on, only yes or no!")
+ask_ok("Do you really want to quit?")
+ask_ok("OK to overwrite the file?", 2)
+ask_ok("OK to overwrite the file?", 2, "Come on, only yes or no!")
 
 # Important warning: The default value is evaluated only once. This makes a difference when the default is a mutable object such as a list, dictionary, or instances of most classes.
 # For example, the following function accumulates the arguments passed to it on subsequent calls

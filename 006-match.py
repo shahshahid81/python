@@ -12,6 +12,7 @@ def http_error(status):
         case _:
             return "Something's wrong with the internet"
 
+
 point = (0, 0)
 # point is an (x, y) tuple
 match point:
@@ -35,6 +36,7 @@ class Point:
         self.x = x
         self.y = y
 
+
 def where_is(point):
     match point:
         # Matching point variable with the constructor
@@ -52,5 +54,6 @@ def where_is(point):
         case _:
             print("Not a point")
 
-point = Point(2,2)
+
+point = Point(2, 2)
 where_is(point)
