@@ -102,3 +102,15 @@ def to_json(arg1, *, kw1, **extras):
 
 
 print(to_json(10, kw1=20, a=1, b=2, c=3))
+print(to_json(arg1=10, kw1=20, a=1, b=2, c=3))
+
+# / means before parameters are positional only, no keyword
+def to_json(arg1, /, *, kw1, **extras):
+    formatted_extras = ", ".join([f"{key}: {value}" for key, value in extras.items()])
+    return f'{{ "arg1": {arg1}, "kw1": {kw1}, "extras": {{{formatted_extras}}}}}'
+
+
+print(to_json(10, kw1=20, a=1, b=2, c=3))
+# TypeError: to_json() missing 1 required positional argument: 'arg1'
+# print(to_json(arg1=10, kw1=20, a=1, b=2, c=3))
+
