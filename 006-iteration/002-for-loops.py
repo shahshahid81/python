@@ -9,6 +9,14 @@ for c in "python":
 print(suit)  # note that suit is persisted after the loop ends
 print(c)  # note that c is persisted after loop ends
 
+suits = ["Spades", "Hearts", "Diamonds", "Clubs"]
+
+for suit in suits:
+    # suit is a copy, original is not modified
+    suit = f'{suit[0].upper()}'
+    print(suit)
+print(suits)
+
 for i in range(2, 11, 2):
     print(i)
 
