@@ -5,8 +5,16 @@ my_dict = dict()
 # KeyError: 'age'
 # print(my_dict['age'])
 
-# give default value of int which is 0, note that default value is needed else there is key error
+# give default value of int which is 0, note that a callable (int in example) is needed else there is key error
 my_dict = defaultdict(int)
+print(my_dict["age"])
+my_dict["some-value"] += 10
+print(my_dict)
+
+# defaultdict accepts any callable as its default factory.
+# Whenever a missing key is accessed, it calls the factory and uses the returned value.
+# Here, the lambda returns 18.
+my_dict = defaultdict(lambda: 18)
 print(my_dict["age"])
 my_dict["some-value"] += 10
 print(my_dict)
